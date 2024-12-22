@@ -117,7 +117,7 @@ const page = () => {
                 <div className='px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10'>
                   <p className='mt-2 text-lg/7 font-medium tracking-tight text-brand-950 max-lg:text-center'>Real-time notifications</p>
                   <p className='mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center'>
-                    Get notified about critical events the moment they happen, no matter if you're at home or on the go.
+                    Get notified about critical events the moment they happen, no matter if you&apos;re at home or on the go.
                   </p>
                 </div>
 
@@ -156,7 +156,7 @@ const page = () => {
             {/* 3rd element */}
             <div className='relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2'>
               <div className='absolute inset-px rounded-lg bg-white' />
-              <div className='relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius,lg)+1px)]'>
+              <div className='relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]'>
                 <div className='px-8 pt-8 sm:px-10 sm:pt-10'>
                   <p className='mt-2 text-lg/7 font-medium tracking-tight text-brand-950 max-lg:text-center'>Track Any Properties</p>
                   <p className='mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center'>
