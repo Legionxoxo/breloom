@@ -1,4 +1,7 @@
+import { db } from "@/db"
 import { j } from "./__internals/j"
+import { currentUser } from "@clerk/nextjs/server"
+import { HTTPException } from "hono/http-exception"
 
 /**
  * Public (unauthenticated) procedures
@@ -6,8 +9,34 @@ import { j } from "./__internals/j"
  * This is the base piece you use to build new queries and mutations on your API.
  */
 
-const authMiddleware = j.middleware(({ next }) => {
-  return next({})
+const authMiddleware = j.middleware(async ({ c, next }) => {
+  const authHeader = c.req.header("Authorization")
+
+  if (authHeader) {
+    //Bearer <API_KEY>
+    const apiKey = authHeader.split(" ")[1] // bearer apikey
+
+    const user = await db.user.findUnique({
+      where: { apiKey },
+    })
+
+    if (user) return next({ user })
+  }
+  /* no user or no apikey  */
+  const auth = await currentUser()
+  if (!auth) {
+    throw new HTTPException(401, { message: "Unauthorized" })
+  }
+
+  const user = await db.user.findUnique({
+    where: { externalId: auth.id },
+  })
+
+  if (!user) {
+    throw new HTTPException(401, { message: "Unauthorized" })
+  }
+
+  return next({ user })
 })
 
 export const baseProcedure = j.procedure
