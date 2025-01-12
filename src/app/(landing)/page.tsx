@@ -40,7 +40,7 @@ const page = () => {
             </div>
 
             <p className='text-base/7 text-gray-600 max-w-prose text-center text-pretty'>
-              Pegion is the easiest way to moniter your SaaS. Get instant notifications for
+              Pidgey is the easiest way to moniter your SaaS. Get instant notifications for
               <span className='font-semibold text-gray-700'> sales, new users, or any other event </span>
               sent directly to your discord
             </p>
@@ -73,20 +73,20 @@ const page = () => {
             <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
               <MockDiscordUI>
                 <AnimatedList>
-                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPegion'
+                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPidgey'
                     timestamp='Today at 4:34Am' badgeText='Time to peek' badgeColor='#43b581' title='🤖 New user peeked'
                     content={{
                       name: 'Tushar bihari',
                       email: "ogbihari@bihar.in"
                     }} />
-                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPegion'
+                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPidgey'
                     timestamp='Today at 9:34Am' badgeText='New Peek' badgeColor='#faa61a' title='🌟 New milestone'
                     content={{
                       users: '500',
                       subscribed: '200',
                       membership: "Yearly",
                     }} />
-                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPegion'
+                  <DiscordMessage avatarSrc='/brand-asset-profile-picture.png' avatarAlt='Peekegion avatar' username='PeekPidgey'
                     timestamp='Today at 11:34Am' badgeText='Need fix' badgeColor='#5865f2' title='⚙️ Critical issue'
                     content={{
                       issue: 'DDoS attack',
@@ -138,7 +138,7 @@ const page = () => {
                   <p className='mt-2 text-lg/7 font-medium tracking-tight text-brand-950 max-lg:text-center'>Track Any Event</p>
                   <p className='mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center'>
                     From new user signups to successful payments,
-                    PeekPegion
+                    PeekPidgey
                     notifies you for all critical events in your SaaS.
                   </p>
                 </div>
@@ -181,7 +181,7 @@ const page = () => {
                 <div className='px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10'>
                   <p className='mt-2 text-lg/7 font-medium tracking-tight text-brand-950 max-lg:text-center'>Easy Integration</p>
                   <p className='mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center'>
-                    Connect PeekPegion with your existing workflows in minutes and
+                    Connect PeekPidgey with your existing workflows in minutes and
                     call our Intuitive logging API from any language.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ const page = () => {
                     <div className='flex bg-gray-800/40 ring-1 ring-white/5'>
                       <div className='-mb-px flex text-sm/6 font-medium text-gray-400'>
                         <div className='border-b border-r border-b-white/20 bg-white/5 border-r-white/10  px-4 py-2 text-white'>
-                          peekpegion.js
+                          PeekPidgey.js
                         </div>
                       </div>
                     </div>
@@ -243,7 +243,7 @@ const page = () => {
                 <Star className='size-5 text-brand-600 fill-brand-600' />
               </div>
               <p className='text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty'>
-                PeekPegion is an outstanding platform! Its user-friendly interface, innovative features, and seamless experience make it a game-changer. Highly recommend!
+                PeekPidgey is an outstanding platform! Its user-friendly interface, innovative features, and seamless experience make it a game-changer. Highly recommend!
               </p>
               <div className='flex flex-col justify-center lg:justify-start sm:flex-row items-center sm:items-start gap-4 mt-2'>
                 <Image src="/user-2.png" className='rounded-full object-cover' alt='Defo not ChatGPT' width={48} height={48} />
@@ -266,7 +266,7 @@ const page = () => {
                 <Star className='size-5 text-brand-600 fill-brand-600' />
               </div>
               <p className='text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty'>
-                PeekPegion delivers excellence! Intuitive design, reliable performance, and top-notch functionality.Its user-friendly interface and innovative features. A must-try for anyone seeking quality.
+                PeekPidgey delivers excellence! Intuitive design, reliable performance, and top-notch functionality.Its user-friendly interface and innovative features. A must-try for anyone seeking quality.
               </p>
               <div className='flex flex-col justify-center lg:justify-start sm:flex-row items-center sm:items-start gap-4 mt-2'>
                 <Image src="/user-1.png" className='rounded-full object-cover' alt='Defo not ChatGPT' width={48} height={48} />
